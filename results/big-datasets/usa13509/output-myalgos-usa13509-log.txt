@@ -1,0 +1,131 @@
+Args:
+ [1] "/usr/lib64/R/bin/exec/R"                          
+ [2] "--no-echo"                                        
+ [3] "--no-restore"                                     
+ [4] "--vanilla"                                        
+ [5] "--file=tsp-myconcavehull-heuristic-benchmark-V2.R"
+ [6] "--args"                                           
+ [7] "usa13509"                                         
+ [8] "3"                                                
+ [9] "19982859"                                         
+[10] "0.9"                                              
+[11] "0"                                                
+--------------------------------------------------------------------------------------------
+Testing concaveRingMergeNearestPtV2 with usa13509 3 times cr= 0.9 
+Saving benchmark results to /my_hd1/my_dir/my_prg/Camerino/tsp/results-paper/usa13509/concaveRingMergeNearestPtV2-3-cr-0.9.csv 
+The TSP is: usa13509 
+No tour file is found for usa13509 
+DistMtx: 3.303 sec elapsed
+3.303 secs for dmtx creation.
+---------------------------------------------------------------------------------------------
+Trial 1 of 3 for concaveRingMergeNearestPtV2 with usa13509 cr= 0.9 
+---------------------------------------------------------------------------------------------
+All pts are in chulls.
+14 rings generated.
+All pts were in rings.
+The tour has 13509 vertices with total cost: 26696934 
+The approximation ratio of concaveRingMergeNearestPtV2 with cr = 0.9 is: ( 26696934 / 19982859 ) = 1.336 
+concaveRingMergeNearestPtV2 has awt of (From vtx no 1): 14939519 
+The Delaunay percentage is: 84.52883 
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 26696934 
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Trial 2 of 3 for concaveRingMergeNearestPtV2 with usa13509 cr= 0.9 
+---------------------------------------------------------------------------------------------
+All pts are in chulls.
+14 rings generated.
+All pts were in rings.
+The tour has 13509 vertices with total cost: 26696934 
+The approximation ratio of concaveRingMergeNearestPtV2 with cr = 0.9 is: ( 26696934 / 19982859 ) = 1.336 
+concaveRingMergeNearestPtV2 has awt of (From vtx no 1): 14939519 
+The Delaunay percentage is: 84.52883 
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 26696934 
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Trial 3 of 3 for concaveRingMergeNearestPtV2 with usa13509 cr= 0.9 
+---------------------------------------------------------------------------------------------
+All pts are in chulls.
+14 rings generated.
+All pts were in rings.
+The tour has 13509 vertices with total cost: 26696934 
+The approximation ratio of concaveRingMergeNearestPtV2 with cr = 0.9 is: ( 26696934 / 19982859 ) = 1.336 
+concaveRingMergeNearestPtV2 has awt of (From vtx no 1): 14939519 
+The Delaunay percentage is: 84.52883 
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 26696934 
+---------------------------------------------------------------------------------------------
+concaveRingMergeNearestPtV2: 6.977 sec elapsed
+concaveRingMergeNearestPtV2: 6.426 sec elapsed
+concaveRingMergeNearestPtV2: 6.321 sec elapsed
+3.303 secs for dmtx creation.
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 26696934 
+--------------------------------------------------------------------------------------------
+Args:
+ [1] "/usr/lib64/R/bin/exec/R"                      
+ [2] "--no-echo"                                    
+ [3] "--no-restore"                                 
+ [4] "--vanilla"                                    
+ [5] "--file=tsp-myconcavehull-plain-benchmark-V2.R"
+ [6] "--args"                                       
+ [7] "usa13509"                                     
+ [8] "3"                                            
+ [9] "19982859"                                     
+[10] "0.9"                                          
+[11] "0"                                            
+--------------------------------------------------------------------------------------------
+Testing concaveRingMergeNearestPtV3 with usa13509 3 times cr= 0.9 
+Saving benchmark results to /my_hd1/my_dir/my_prg/Camerino/tsp/results-paper/usa13509/concaveRingMergeNearestPtV3-3-cr-0.9.csv 
+The TSP is: usa13509 
+No tour file is found for usa13509 
+DistMtx: 3.342 sec elapsed
+3.342 secs for dmtx creation.
+---------------------------------------------------------------------------------------------
+Trial 1 of 3 for concaveRingMergeNearestPtV3 with usa13509 cr= 0.9 
+---------------------------------------------------------------------------------------------
+All pts are in chulls.
+14 rings generated.
+All pts were in rings.
+The tour has 13509 vertices with total cost: 28380516 
+The approximation ratio of concaveRingMergeNearestPtV3 with cr = 0.9 is: ( 28380516 / 19982859 ) = 1.42 
+concaveRingMergeNearestPtV3 has awt of (From vtx no 1): 15860225 
+The Delaunay percentage is: 85.46154 
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 28380516 
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Trial 2 of 3 for concaveRingMergeNearestPtV3 with usa13509 cr= 0.9 
+---------------------------------------------------------------------------------------------
+All pts are in chulls.
+14 rings generated.
+All pts were in rings.
+The tour has 13509 vertices with total cost: 28380516 
+The approximation ratio of concaveRingMergeNearestPtV3 with cr = 0.9 is: ( 28380516 / 19982859 ) = 1.42 
+concaveRingMergeNearestPtV3 has awt of (From vtx no 1): 15860225 
+The Delaunay percentage is: 85.46154 
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 28380516 
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+Trial 3 of 3 for concaveRingMergeNearestPtV3 with usa13509 cr= 0.9 
+---------------------------------------------------------------------------------------------
+All pts are in chulls.
+14 rings generated.
+All pts were in rings.
+The tour has 13509 vertices with total cost: 28380516 
+The approximation ratio of concaveRingMergeNearestPtV3 with cr = 0.9 is: ( 28380516 / 19982859 ) = 1.42 
+concaveRingMergeNearestPtV3 has awt of (From vtx no 1): 15860225 
+The Delaunay percentage is: 85.46154 
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 28380516 
+---------------------------------------------------------------------------------------------
+concaveRingMergeNearestPtV3: 6.978 sec elapsed
+concaveRingMergeNearestPtV3: 6.169 sec elapsed
+concaveRingMergeNearestPtV3: 6.319 sec elapsed
+3.342 secs for dmtx creation.
+cr = 0.9 -- 14 rings generated.
+The sum of 14 rings costs: 26235348 the final merged ring cost: 28380516 
+--------------------------------------------------------------------------------------------
+

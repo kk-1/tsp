@@ -1,6 +1,0 @@
-﻿Algo,ResultId,Time(sec),TourCost,AWDfromVTX1,MinAWD,DelEdgeP
-concaveRingMergeNearestPtV2,1,0.141,4215.234,2127.86,2067.242,97.5
-concaveRingMergeNearestPtV2,2,0.109,4215.234,2127.86,2067.242,97.5
-concaveRingMergeNearestPtV2,3,0.11,4215.234,2127.86,2067.242,97.5
-concaveRingMergeNearestPtV2,AVG,0.12,4215.234,2127.86,2067.242,97.5
-concaveRingMergeNearestPtV2,STD,0.018,0,0,0,0
