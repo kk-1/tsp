@@ -1,0 +1,8 @@
+﻿Algo,ResultId,Time(sec),TourCost,AWDfromVTX1,MinAWD,DelEdgeP
+arbitrary_insertion,1,12.218,203625.55,101833.271,NA,99.13
+arbitrary_insertion,2,11.157,203874.115,101945.73,NA,99.005
+arbitrary_insertion,3,14.836,203712.684,101844.567,NA,99.085
+arbitrary_insertion,4,12.992,204007.405,101919.711,NA,98.88
+arbitrary_insertion,5,12.751,203626.871,101838.713,NA,99.12
+arbitrary_insertion,AVG,12.791,203769.325,101876.398,NA,99.044
+arbitrary_insertion,STD,1.344,167.209,52.384,NA,0.104
