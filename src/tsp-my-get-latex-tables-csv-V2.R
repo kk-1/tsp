@@ -4,8 +4,8 @@
 remove(list = ls())
 ########################################################################################################
 
-myWorkDir <- "/my_hd1/my_dir/my_prg/Camerino/tsp"
-myResultsDir <- "/my_hd1/my_dir/my_prg/Camerino/tsp/results-big-custom-cr=1.1"
+myWorkDir <- "/my_hd1/my_dir/my_prg/Camerino/tsp" #The work dir
+myResultsDir <- "/my_hd1/my_dir/my_prg/Camerino/tsp/results" #Results dir
 
 
 setwd(myWorkDir)
@@ -16,69 +16,49 @@ library(ggplot2)
 library(reshape2)
 ########################################################################################################
 
+
+
+
+#############################################################################
+# Just set these parallel arrays below and good to go 
+#############################################################################
+
 #List algorithms 
-# Algos <- c(
-#   "concaveRingMergeNearestPtV2",
-#   "concaveRingMergeNearestPtV3",
-#   "nearest_insertion",
-#   "farthest_insertion",
-#   "cheapest_insertion",
-#   "arbitrary_insertion",
-#   "nn",
-#   "repetitive_nn",
-#   "two_opt")
-
-
 Algos <- c(
   "concaveRingMergeNearestPtV2",
-  "concaveRingMergeNearestPtV3"
-  # "arbitrary_insertion",
-  # "nn"
- )
+  "concaveRingMergeNearestPtV3",
+  "nearest_insertion",
+  "farthest_insertion",
+  "cheapest_insertion",
+  "arbitrary_insertion",
+  "nn",
+  "repetitive_nn",
+  "two_opt")
 
-myAlgoNames <- c("CH" , "CNH")
-#myAlgoNames <- c("CH" , "CNH",  "AI" , "NN")
 
-#myAlgoNames <- c("CH" , "CNH",  "NI" , "FI", "CI" , "AI" , "NN" , "RNN", "2-Opt")
-# Algos <- c(
-#   "concaveRingMergeNearestPtV2",
-#   "concaveRingMergeNearestPtV3",
-#   "nearest_insertion",
-#   "farthest_insertion",
-#   "cheapest_insertion",
-#   "arbitrary_insertion",
-#   "nn",
-#   "repetitive_nn",
-#   "two_opt")
+#Header for algo names  
+myAlgoNames <- c("CH" , "CNH",  "NI" , "FI", "CI" , "AI" , "NN" , "RNN", "2-Opt")
+
+
+
+#Result files for the selected algos
+#Incase there are garbage csv files list the actual result files to be processed
+csvFileNames <- c(
+  "concaveRingMergeNearestPtV2-3-cr-0.9.csv",
+  "concaveRingMergeNearestPtV3-3-cr-0.9.csv",
+  "nearest_insertion-20.csv",
+  "farthest_insertion-20.csv",
+  "cheapest_insertion-20.csv",
+  "arbitrary_insertion-20.csv",
+  "nn-20.csv",
+  "repetitive_nn-20.csv",
+  "two_opt-20.csv")
 
 
 #############################################################################
-# Just set these arrays and good to go 
+#Big datasets
 #############################################################################
 
-# 
-# ############################################################################
-# 
-# #For Tnm127 ands Tnm199 with tripack DelEdge Detection
-# dataSetsOptimTour <- c(
-#   0,   #   "Tnm127",
-#   0   #   "Tnm199",
-# )
-# 
-# #List datasets
-# dataSets <- c(
-# "Tnm127",
-# "Tnm199"
-# )
-# 
-# 
-# 
-# #List their optim tour costs if they are known
-# dataSetsOptimCost <- c(
-#   1871162,  #   "Tnm127",
-#   3139778   #   "Tnm199",
-# )
-# ############################################################################
 
 #Set it to 1 if there is a tour file 0 ow
 dataSetsOptimTour <- c(
@@ -102,7 +82,7 @@ dataSetsOptimTour <- c(
 )
 
 
-# #List datasets
+#List big datasets
 dataSets <- c(
 "pr1002",
 "pr2392",
@@ -123,7 +103,7 @@ dataSets <- c(
 "myRNDHexLattice-158x210-30000"
 )
 
-# #List their optim tour costs if they are known -1 ow. FROM THE LOG FILE OR FROM CSV FILES!!!
+#List their optim tour costs if they are known -1 ow. FROM THE LOG FILE OR FROM CSV FILES!!!
 dataSetsOptimCost <- c(
 259066,  # "pr1002",
 378062,  # "pr2392",
@@ -148,42 +128,8 @@ dataSetsOptimCost <- c(
 
 
 
-
-
-
-
-# # ############################################################################
-# # 
-# # #For Tnm154 ands Tnm178 with tripack DelEdge Detection
-# dataSetsOptimTour <- c(
-#    0,   #   "Tnm154",
-#    0   #   "Tnm178",
-#  )
-# 
-# # #List datasets
-#  dataSets <- c(
-#  "Tnm154",
-#  "Tnm178"
-#  )
-# #
-# #
-# 
-# 
-# 
-# #
-# # #List their optim tour costs if they are known
-#  dataSetsOptimCost <- c(
-#    2350345,  #   "Tnm154",
-#    2771953   #   "Tnm178",
-#  )
-#  
-# # ############################################################################
-
-# 
-#  
-#  
 # #############################################################################
-# #All the stuf used in benchmarks
+# #Small datasets
 # #############################################################################
 # #Check if the tsplib dataset has opt.tour or not
 # dataSetsOptimTour <- c(
@@ -309,37 +255,9 @@ dataSetsOptimCost <- c(
 #   -1    #   "myRNDHexLattice-23x23-400"
 # )
 # #############################################################################
-# #All the stuf used in benchmarks
-# #############################################################################
-# 
-# 
-# 
 
 
 
-
-
-#Incase there are garbage csv files list the actual result files to be processed
-# csvFileNames <- c(
-#   "concaveRingMergeNearestPtV2-3-cr-0.9.csv",
-#   "concaveRingMergeNearestPtV3-3-cr-0.9.csv",
-#   "nearest_insertion-20.csv",
-#   "farthest_insertion-20.csv",
-#   "cheapest_insertion-20.csv",
-#   "arbitrary_insertion-20.csv",
-#   "nn-20.csv",
-#   "repetitive_nn-20.csv",
-#   "two_opt-20.csv")
-
- # csvFileNames <- c(
- #   "concaveRingMergeNearestPtV2-3-cr-0.9.csv",
- #   "concaveRingMergeNearestPtV3-3-cr-0.9.csv",
- #   "arbitrary_insertion-5.csv",
- #   "nn-5.csv")
-
-csvFileNames <- c(
-  "concaveRingMergeNearestPtV2-2-cr-1.1.csv",
-  "concaveRingMergeNearestPtV3-2-cr-1.1.csv")
 ########################################################################################################
 
 #Read files
