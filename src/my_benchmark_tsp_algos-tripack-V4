@@ -1,0 +1,189 @@
+#!/bin/bash
+ 
+
+theScript="tsp-all-algo-benchmark-tripack-V4.R"
+
+#Number of runs
+nRuns=5
+
+
+
+########################################################
+#Comment some for big datasets 
+#otherwise benchmarking will be too long!!!
+########################################################
+declare -a methods=(
+"nearest_insertion"
+"farthest_insertion" 
+"cheapest_insertion"
+"arbitrary_insertion"
+"nn"
+"repetitive_nn"
+"two_opt"
+)
+
+
+
+declare -a methodRuns=(
+$nRuns     #  "nearest_insertion"
+$nRuns     #  "farthest_insertion" 
+$nRuns     #  "cheapest_insertion"
+$nRuns     #  "arbitrary_insertion"
+$nRuns     #  "nn"
+$nRuns     #  "repetitive_nn"
+$nRuns     #  "two_opt"
+)
+
+
+########################################################
+#Comment some otherwise benchmarking will be too long!!!
+#Do not forget to benchmark theOptimTourCost too
+#They are two parallel arrays!!!
+########################################################
+
+declare -a tspDataSets=(
+######################################
+#Small datasets
+######################################
+"att48"
+"berlin52"
+"pr76" 
+"kroA100"
+"lin105"
+"ch130"
+"ch150"
+"a280"
+"pcb442"
+"Tnm52" 
+"Tnm76" 
+"Tnm100"
+"Tnm127"
+"Tnm154"
+"Tnm178"
+"Tnm199"
+"myRND-100"
+"myRND-200"
+"myRND-300"
+"myRND-400" 
+"myLattice-10x10"
+"myLattice-10x20"
+"myLattice-15x20"
+"myLattice-20x20"
+"myRNDLattice-12x12-100"
+"myRNDLattice-12x23-200"
+"myRNDLattice-18x23-300"
+"myRNDLattice-23x23-400"
+"myHexLattice-10x10"
+"myHexLattice-10x20"
+"myHexLattice-15x20"
+"myHexLattice-20x20"
+"myRNDHexLattice-12x12-100"
+"myRNDHexLattice-12x23-200"
+"myRNDHexLattice-18x23-300"
+"myRNDHexLattice-23x23-400"
+######################################
+#Big datasets
+######################################
+"myLattice-100x100-10000"
+"myRNDLattice-105x105-10000"
+"myLattice-100x200-20000"
+ "myRNDLattice-105x210-20000"
+"myLattice-150x200-30000"
+"myRNDLattice-158x210-30000"
+"pr1002"    
+"pr2392"    
+"rl5915"  
+"usa13509" 
+"myHexLattice-100x100-10000"
+"myRNDHexLattice-105x105-10000"
+"myHexLattice-100x200-20000"
+"myRNDHexLattice-105x210-20000"
+"pla33810E"
+"myHexLattice-150x200-30000"
+"myRNDHexLattice-158x210-30000"
+)
+
+
+declare -a theOptimTourCost=(
+######################################
+#Small datasets
+######################################
+-1         # "att48"
+-1         # "berlin52"
+-1         # "pr76" 
+-1         # "kroA100"
+-1         # "lin105"
+-1         # "ch130"
+-1         # "ch150"
+-1         # "a280"
+-1         # "pcb442"
+551609     # "Tnm52"
+949961     # "Tnm76"
+1398070    # "Tnm100"
+1871162    # "Tnm127"
+2350345    # "Tnm154"
+2771953    # "Tnm178"
+3139778    # "Tnm199"
+-1         # "myRND-100"
+-1         # "myRND-200"
+-1         # "myRND-300"
+-1         # "myRND-400" 
+-1         # "myLattice-10x10"
+-1         # "myLattice-10x20"
+-1         # "myLattice-15x20"
+-1         # "myLattice-20x20"
+-1         # "myRNDLattice-12x12-100"
+-1         # "myRNDLattice-12x23-200"
+-1         # "myRNDLattice-18x23-300"
+-1         # "myRNDLattice-23x23-400"
+-1         # "myHexLattice-10x10"
+-1         # "myHexLattice-10x20"
+-1         # "myHexLattice-15x20"
+-1         # "myHexLattice-20x20"
+-1         # "myRNDHexLattice-12x12-100"
+-1         # "myRNDHexLattice-12x23-200"
+-1         # "myRNDHexLattice-18x23-300"
+-1         # "myRNDHexLattice-23x23-400"
+######################################
+#Big datasets
+######################################
+-1         #    "myLattice-100x100-10000"
+-1         #    "myRNDLattice-105x105-10000"
+-1         #    "myLattice-100x200-20000"
+-1         #    "myRNDLattice-105x210-20000"
+-1         #    "myLattice-150x200-30000"
+-1         #    "myRNDLattice-158x210-30000"
+-1         #    "pr1002"    
+-1         #    "pr2392"    
+565530     #    "rl5915"  
+19982859   #    "usa13509" 
+-1         #    "myHexLattice-100x100-10000"
+-1         #    "myRNDHexLattice-105x105-10000"
+-1         #    "myHexLattice-100x200-20000"
+-1         #    "myRNDHexLattice-105x210-20000"
+-1         #    "pla33810E"
+-1         #    "myHexLattice-150x200-30000"
+-1         #    "myRNDHexLattice-158x210-30000"
+)    
+
+
+
+########################################################
+#Set the result and data dirs in the R codes below!!!!!!
+########################################################
+
+d=0
+for i in "${tspDataSets[@]}"
+do
+   k=0
+   for j in "${methods[@]}"
+   do
+   #echo Rscript --vanilla $theScript $j $i ${methodRuns[$k]} ${theOptimTourCost[$d]} 1 | tee -a output-algos-log.txt
+   Rscript --vanilla $theScript $j $i ${methodRuns[$k]} ${theOptimTourCost[$d]} 1 | tee -a output-algos-log.txt
+   k=$k+1
+   done
+   d=$d+1
+done
+
+
+
