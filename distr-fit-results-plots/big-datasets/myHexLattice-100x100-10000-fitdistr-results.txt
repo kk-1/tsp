@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for myHexLattice-100x100-10000 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : rejected rejected rejected rejected rejected 
+KS-val : 0.03281854 0.1272752 0.06480855 0.0251235 0.03532148 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 351.7869 6226.355 1574.438 216.7191 393.1864 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 2287.138 Inf 9268.476 1217.033 2756.571 
+------------------------------------------------------------------
+AIC    : -608006.5 109968.2 -501541.4 -628805.7 -589751.9 
+------------------------------------------------------------------
+Min KS  : Beta 
+Min CM  : Beta 
+Min AD  : Beta 
+Min AIC : Beta 
+------------------------------------------------------------------

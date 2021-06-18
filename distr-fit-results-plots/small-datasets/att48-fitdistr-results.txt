@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for att48 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : not rejected rejected rejected rejected rejected 
+KS-val : 0.02422202 0.07242836 0.02980264 0.05700774 0.07834681 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 0.2102162 4.212363 0.5846586 1.714995 4.768075 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 2.204486 28.24744 4.848544 9.593473 30.92736 
+------------------------------------------------------------------
+AIC    : -618.6811 -169.2043 -552.4885 -647.637 -198.2193 
+------------------------------------------------------------------
+Min KS  : Weibull 
+Min CM  : Weibull 
+Min AD  : Weibull 
+Min AIC : Beta 
+------------------------------------------------------------------

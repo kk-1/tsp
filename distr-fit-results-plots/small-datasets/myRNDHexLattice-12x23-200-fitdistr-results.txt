@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for myRNDHexLattice-12x23-200 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : rejected rejected rejected rejected rejected 
+KS-val : 0.08713458 0.2424441 0.1353765 0.100856 0.06038002 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 80.82359 946.7472 228.9641 103.2309 31.33855 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 569.1943 5328.373 1371.093 676.8901 217.4672 
+------------------------------------------------------------------
+AIC    : -12744.19 42917.72 -8081.521 -17484.2 -16554.34 
+------------------------------------------------------------------
+Min KS  : Normal 
+Min CM  : Normal 
+Min AD  : Normal 
+Min AIC : Beta 
+------------------------------------------------------------------

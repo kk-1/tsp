@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for kroA100 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : rejected rejected rejected rejected rejected 
+KS-val : 0.02895159 0.07394855 0.03745439 0.03918906 0.0600936 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 1.4322 21.18195 4.968922 3.203889 12.07886 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 11.41354 139.9502 35.96073 17.15237 76.04312 
+------------------------------------------------------------------
+AIC    : -2817.682 -561.9324 -2320.646 -3058.667 -1818.356 
+------------------------------------------------------------------
+Min KS  : Weibull 
+Min CM  : Weibull 
+Min AD  : Weibull 
+Min AIC : Beta 
+------------------------------------------------------------------

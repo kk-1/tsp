@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for myRNDHexLattice-105x105-10000 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : rejected rejected rejected rejected rejected 
+KS-val : 0.03199418 0.1001698 0.0632931 0.02424494 0.03492278 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 338.2289 4391.448 1497.601 202.1277 393.5013 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 2258.931 Inf 8909.248 1149.786 2767.505 
+------------------------------------------------------------------
+AIC    : -635802.1 -175718.8 -536356.6 -655509.5 -609181.6 
+------------------------------------------------------------------
+Min KS  : Beta 
+Min CM  : Beta 
+Min AD  : Beta 
+Min AIC : Beta 
+------------------------------------------------------------------

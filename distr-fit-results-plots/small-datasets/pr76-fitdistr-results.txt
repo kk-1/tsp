@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for pr76 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : rejected rejected rejected rejected rejected 
+KS-val : 0.02387788 0.07756591 0.04928805 0.02438769 0.06128234 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 0.3104067 14.06704 3.270034 0.7356857 4.975239 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 2.116119 89.44209 20.50396 5.431997 33.22693 
+------------------------------------------------------------------
+AIC    : -4467.867 -3180.176 -4215.89 -4353.675 -3852.948 
+------------------------------------------------------------------
+Min KS  : Weibull 
+Min CM  : Weibull 
+Min AD  : Weibull 
+Min AIC : Weibull 
+------------------------------------------------------------------

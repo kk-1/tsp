@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for berlin52 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : not rejected rejected rejected rejected rejected 
+KS-val : 0.01864974 0.09687617 0.04646708 0.02873582 0.06604881 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 0.1832283 7.763146 1.531799 0.4545285 3.772108 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 1.551737 47.61629 9.407093 2.600321 24.48018 
+------------------------------------------------------------------
+AIC    : -1486.202 -782.5219 -1374.642 -1472.976 -1061.241 
+------------------------------------------------------------------
+Min KS  : Weibull 
+Min CM  : Weibull 
+Min AD  : Weibull 
+Min AIC : Weibull 
+------------------------------------------------------------------

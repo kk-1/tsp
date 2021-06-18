@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for myLattice-100x200-20000 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : rejected rejected rejected rejected rejected 
+KS-val : 0.01636983 0.07378379 0.03307861 0.01916438 0.05398394 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 52.01063 2124.661 436.2969 97.20526 1123.504 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 534.4491 13544.66 2972.937 537.7338 7368.829 
+------------------------------------------------------------------
+AIC    : -533992.6 -315483.8 -488979.7 -550530.7 -425262.6 
+------------------------------------------------------------------
+Min KS  : Weibull 
+Min CM  : Weibull 
+Min AD  : Weibull 
+Min AIC : Beta 
+------------------------------------------------------------------

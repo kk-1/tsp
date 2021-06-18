@@ -1,0 +1,19 @@
+------------------------------------------------------------------
+Dist Fit for myRNDLattice-105x210-20000 
+------------------------------------------------------------------
+Dists  : Weibull Lognormal Gamma Beta Normal 
+------------------------------------------------------------------
+KS-dec : rejected rejected rejected rejected rejected 
+KS-val : 0.01617965 0.07395576 0.03333455 0.01942572 0.05332796 
+CM-dec : rejected not computed rejected not computed not computed 
+CM-val : 51.16858 2145.699 445.6419 98.88996 1104.869 
+AD-dec : rejected not computed rejected not computed not computed 
+AD-val : 529.5313 13657.28 3021.585 545.5116 7258.365 
+------------------------------------------------------------------
+AIC    : -526462.2 -307043.7 -480982.8 -542905.9 -418799.6 
+------------------------------------------------------------------
+Min KS  : Weibull 
+Min CM  : Weibull 
+Min AD  : Weibull 
+Min AIC : Beta 
+------------------------------------------------------------------
