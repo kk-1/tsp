@@ -36,8 +36,6 @@ source("tsp_functions-V3.R")
 #Arg processing
 ########################################################################################################
 #Print the arguments for the Rscript
-#cat("Here is the usage:\n")
-#cat("Rscript --vanilla tsp-benchmark-algo-V3.0.R <algo> <tspdatafile> <n>\n")
 args <- commandArgs()
 cat("Args:\n")
 print(args)
@@ -50,19 +48,16 @@ print(args)
 #quit()
 ##Set the values for interactive run here (uncomment the following 2 lines!):
 #Arg Values start from the 7th element!!!
-# #Arguments comes as text!!!
+#Arguments comes as text!!!
 #Comment them for script runs
-########################################################################################################
-#args <- matrix(seq(1:9),nrow=1,ncol=9)
-#args[7:9] <- c("concaveRingMergeNearestPtD", "myLattice-20x20", 1)
 ########################################################################################################
 
 
 ########################################################################################################
 #For interactive trial uncomment the next 2 lines
 ########################################################################################################
-#args <- matrix(seq(1:10),nrow=1,ncol=10)
-#args[7:10] <- c("repetitive_nn", "Tnm52", 1, 551609)
+#args <- matrix(seq(1:11),nrow=1,ncol=11)
+#args[7:10] <- c("repetitive_nn", "Tnm52", 1, 551609,1)
 ########################################################################################################
 
 #Get the necessary values from args
@@ -92,29 +87,7 @@ outputFile <- paste(dataSetResultDir,outputFileName, sep = "/")
 cat("Saving benchmark results to", outputFile,"\n")
 ########################################################################################################
 
-# methods <- c(
-#   "RingMergeMidPt", 
-#   "RingMergeMidPtD", #DEBUG version plots stuff
-#   "RingMergeLineSeg", 
-#   "RingMergeLineSegD",#DEBUG version plots stuff
-#   "RingMergeNearestPt",
-#   "RingMergeNearestPtD",#DEBUG version plots stuff
-#   "concaveRingMergeNearestPt",
-#   "concaveRingMergeNearestPtD",#DEBUG version plots stuff
-#   "nearest_insertion", 
-#   "farthest_insertion", 
-#   "cheapest_insertion",
-#   "arbitrary_insertion", 
-#   "nn", 
-#   "repetitive_nn", 
-#   "two_opt")
 
-##########################
-
-#Set concavity ratio for the concaveman
-cr <- 1.0
-
-#ATTENTION concaveman rounds numbers to 4 prec digits
 coordDigitPrec <- 4
 
 theTSPFileName <- paste0(theTSP,".tsp")
@@ -204,75 +177,6 @@ for (i in 1:nList) {
 #############################################################################
 
 
-
-
-
-
-
-
-
-#############################################################################################################
-#DEBUG plot
-#############################################################################################################
-
-## Transparent colors
-## Mark Gardener 2015
-## www.dataanalytics.org.uk
-
-# t_col <- function(color, percent = 50, name = NULL) {
-#   #      color = color name
-#   #    percent = % transparency
-#   #       name = an optional name for the color
-#   
-#   ## Get RGB values for named color
-#   rgb.val <- col2rgb(color)
-#   
-#   ## Make new color using input color as base and alpha set by transparency
-#   t.col <- rgb(rgb.val[1], rgb.val[2], rgb.val[3],
-#                max = 255,
-#                alpha = (100 - percent) * 255 / 100,
-#                names = name)
-#   
-#   return(t.col)
-#   ## Save the color
-#   #invisible(t.col)
-# }
-# ## END
-# myGreenTrans <- t_col("green", perc = 25)
-# #############################################################################################################
-# #For EPS output
-# cairo_ps(filename = (paste0(theTSP,"-dt.eps")),
-#          width = 12,
-#          height = 7,
-#          pointsize = 12,
-#          fallback_resolution = 600)
-# #Draw the tsp
-# plot(theTSPObject, theOptimTour, 
-#      xlab = "x-coordinate",
-#      ylab = "y-coordinate",
-#      lty = 3, lwd=1, cex=1.5,  col = "black", pch= 19, asp=1,
-#      main = paste0(theTSP," --- Optimum tour and Delaunay Triangulation edges"),
-#      xlim=c(xmin, xmax),
-#      ylim=c(ymin, ymax)
-# )
-# plot(dxy, wlines = "triang", wpoints = "none", lty=1, lwd=2, col = myGreenTrans, asp=1, add=T)
-#     
-# points(theTSPcoordMTX[,1:2], lty = 3, lwd=0.7, cex=1.5,  col = "black", pch= 19, asp=1)
-# #Specific vertex label positions for pr76
-# text(theTSPcoordMTX[c(1:71,73:75),1], theTSPcoordMTX[c(1:71,73:75),2], labels = c(1:71,73:75), cex = 0.8, col = "red", pos = 3)
-# text(theTSPcoordMTX[c(72,76),1], theTSPcoordMTX[c(72,76),2], labels = c(72,76), cex = 0.8, col = "red", pos = 4)
-# 
-# 
-# dev.off()
-#############################################################################################################
-
-
-
-
-
-
-
-
 #############################################################################
 #Delaunay edges stuff
 #############################################################################
@@ -302,30 +206,6 @@ myHeight <- 600
 
 
 
-
-######################################################
-#DEBUG for concave hull
-######################################################
-# cr <- 2
-# concaveHull <- concaveman(theTSPcoordMTX, concavity = cr)
-# 
-# plot(theTSPObject, theOptimTour, 
-#      xlab = "x-coordinate", 
-#      ylab = "y-coordinate", 
-#      lwd=2.0, cex=1.5,  col = "black", pch= 4, 
-#      main = paste0(theTSP," - optim tour"),
-#      xlim=c(xmin, xmax), 
-#      ylim=c(ymin, ymax))
-# 
-# points(theTSPcoordMTX, col="black", pch=19)
-# lines(concaveHull, col="green")
-# points(concaveHull, col="green", pch=19)
-# 
-# 
-# p <- coord2vtxPerm(theTSPcoordMTX,concaveHull)
-# r <- -1 * my_get_cost_perm(p) / theOptimTourCost
-# cat("The concave hull with c =",cr, "gives approx ratio of:", r, "\n")
-######################################################
 
 
 ##########################################################################################################
@@ -391,9 +271,6 @@ for (i in 1:nTrial) {
       minAWDData <- c(minAWDData, NA)
     }
     
-    #Sometimes DT fails!!!
-    #Uncomment the following then
-    # delEdgePercentData <- c(delEdgePercentData, NA)
     
     p <- my_get_del_percent_fast(nearestInsOptimTour, edgesDelaunayDF)
     cat("The Delaunay percentage is:",p,"\n")
@@ -424,10 +301,7 @@ for (i in 1:nTrial) {
     }else{
       minAWDData <- c(minAWDData, NA)
     }
-    #Sometimes DT fails!!!
-    #Uncomment the following then
-    # delEdgePercentData <- c(delEdgePercentData, NA)
-    
+
     p <- my_get_del_percent_fast(farthestInsOptimTour, edgesDelaunayDF)
     cat("The Delaunay percentage is:",p,"\n")
     delEdgePercentData <- c(delEdgePercentData, p)
@@ -458,10 +332,7 @@ for (i in 1:nTrial) {
       minAWDData <- c(minAWDData, NA)
     }
     
-    #Sometimes DT fails!!!
-    #Uncomment the following then
-    # delEdgePercentData <- c(delEdgePercentData, NA)
-    
+        
     p <- my_get_del_percent_fast(cheapestInsOptimTour, edgesDelaunayDF)
     cat("The Delaunay percentage is:",p,"\n")
     delEdgePercentData <- c(delEdgePercentData, p)
@@ -491,9 +362,7 @@ for (i in 1:nTrial) {
     }else{
       minAWDData <- c(minAWDData, NA)
     }
-    #Sometimes DT fails!!!
-    #Uncomment the following then
-    # delEdgePercentData <- c(delEdgePercentData, NA)
+ 
     
     p <- my_get_del_percent_fast(arbitraryInsOptimTour, edgesDelaunayDF)
     cat("The Delaunay percentage is:",p,"\n")
@@ -524,9 +393,7 @@ for (i in 1:nTrial) {
     }else{
       minAWDData <- c(minAWDData, NA)
     }
-    #Sometimes DT fails!!!
-    #Uncomment the following then
-    # delEdgePercentData <- c(delEdgePercentData, NA)
+ 
     
     p <- my_get_del_percent_fast(nnOptimTour, edgesDelaunayDF)
     cat("The Delaunay percentage is:",p,"\n")
@@ -558,10 +425,7 @@ for (i in 1:nTrial) {
     }else{
       minAWDData <- c(minAWDData, NA)
     }
-    
-    #Sometimes DT fails!!!
-    #Uncomment the following then
-    # delEdgePercentData <- c(delEdgePercentData, NA)
+   
     
     p <- my_get_del_percent_fast(repetitive_nnOptimTour, edgesDelaunayDF)
     cat("The Delaunay percentage is:",p,"\n")
@@ -594,9 +458,7 @@ for (i in 1:nTrial) {
       minAWDData <- c(minAWDData, NA)
     }
     
-    #Sometimes DT fails!!!
-    #Uncomment the following then
-    # delEdgePercentData <- c(delEdgePercentData, NA)
+
     
     p <- my_get_del_percent_fast(two_optOptimTour, edgesDelaunayDF)
     cat("The Delaunay percentage is:",p,"\n")
@@ -684,9 +546,7 @@ if (theOptimTourCost == -1){
 
 write_excel_csv(resultsDF,outputFile)
 cat("--------------------------------------------------------------------------------------------\n")
-#Append to csv
-#Ok so I realised that append=T does work with write.table - but write.table needs the sep switch to be used so this works:
-#write.table(myDF, "myDF.csv", sep = ",", col.names = !file.exists("myDF.csv"), append = T)
+
 
 
 #########################################################################################################
