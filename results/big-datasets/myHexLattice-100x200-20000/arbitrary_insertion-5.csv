@@ -1,8 +1,8 @@
 ﻿Algo,ResultId,Time(sec),TourCost,AWDfromVTX1,MinAWD,DelEdgeP
-arbitrary_insertion,1,12.218,203625.55,101833.271,NA,99.13
-arbitrary_insertion,2,11.157,203874.115,101945.73,NA,99.005
-arbitrary_insertion,3,14.836,203712.684,101844.567,NA,99.085
-arbitrary_insertion,4,12.992,204007.405,101919.711,NA,98.88
-arbitrary_insertion,5,12.751,203626.871,101838.713,NA,99.12
-arbitrary_insertion,AVG,12.791,203769.325,101876.398,NA,99.044
-arbitrary_insertion,STD,1.344,167.209,52.384,NA,0.104
+arbitrary_insertion,1,11.628,203849.476,101970.556,101838.317,98.975
+arbitrary_insertion,2,15.323,203855.261,101919.341,101850.773,98.985
+arbitrary_insertion,3,10.993,204082.28,101997.581,101981.458,98.86
+arbitrary_insertion,4,12.441,203894.07,101921.323,101877.041,98.945
+arbitrary_insertion,5,11.103,203979.736,102016.096,101925.282,98.94
+arbitrary_insertion,AVG,12.298,203932.164,101964.979,101894.574,98.941
+arbitrary_insertion,STD,1.785,98.743,43.862,58.912,0.049
