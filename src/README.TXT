@@ -1,5 +1,8 @@
 
 ---------------------------------------------------------------------------------------------  
+Please before you run anything take a look at the code.
+Some parameters must be set and some code may need to be commented.
+---------------------------------------------------------------------------------------------  
 Files in this directory:
 ---------------------------------------------------------------------------------------------
 1-) README.TXT
@@ -34,8 +37,15 @@ R code to fit distr to the edge distances of the datasets
 
 11-) tsp_hist_all_datasets-VX.R
 R code to plot edge distance histograms of the datasets
+
+
+12-) tsp-myconcavehull-heuristic-benchmark-tripack-V3.R
+R code for the novel concave hull based TSP heuristic algortihm
+
+13-) tsp-myconcavehull-plain-benchmark-tripack-V3.R
+R code for the novel concave hull based TSP algortihm without any heuristic
+
 ---------------------------------------------------------------------------------------------
 
-Please before you run anything take a look at the code.
-Some parameters must be set and some code may need to be commented.
+
 
