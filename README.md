@@ -1,4 +1,4 @@
-# TSP datasets and results for our TSP paper (in press with the Springer Operations Research Forum, details will be updated) 
+# TSP datasets and results for our TSP paper (in press with the SN Operations Research Forum, details will be updated) 
  
 ## The directory names are self-explanatory: 
 
