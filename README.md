@@ -1,5 +1,7 @@
 # TSP datasets and results for our TSP paper (in press with the SN Operations Research Forum, details will be updated) 
  
+--- 
+
 ## The directory names are self-explanatory: 
 
 * data: TSPLIB and other datasets all in TSPLIB format  
@@ -12,10 +14,17 @@ and kurtosis of the edge distances
 * src: Source codes used in benchmarks 
 * vertex-config: The plot of vertices on the coordinate axis (eps file) 
  
+--- 
+ 
 ##  Files:
 - datasets-hist-vtx-plots-VX.pdf: It contains all the plots in "vertex-config" and "edge-dist-histograms"
 directories as a pdf file  
+--- 
 
 
+![TSP algo demo on pr76](https://github.com/kk-1/tsp/blob/main/bconcaveTSP-d240.gif?raw=true)
+  
+--- 
 For any suggestion or questions:
 kemal.kemal@unicam.it
+--- 
