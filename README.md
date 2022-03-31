@@ -22,7 +22,7 @@ directories as a pdf file
 --- 
 
 
-![TSP algo demo on pr76 dataset from TSPLIB](https://github.com/kk-1/tsp/blob/main/concaveTSP-d240.gif)
+![TSP algo demo on pr76 dataset from TSPLIB](https://github.com/kk-1/tsp/blob/master/concaveTSP-d240.gif)
   
 --- 
 
