@@ -21,7 +21,7 @@ and kurtosis of the edge distances
 directories as a pdf file  
 --- 
 
-
+##  TSP algo demo on pr76 dataset from TSPLIB:
 ![TSP algo demo on pr76 dataset from TSPLIB](https://github.com/kk-1/tsp/blob/master/concaveTSP-d240.gif)
   
 --- 
