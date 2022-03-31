@@ -1,4 +1,4 @@
-# TSP datasets and results for our TSP paper (in press with the SN Operations Research Forum, details will be updated) 
+## TSP datasets and results for our TSP paper (in press with the SN Operations Research Forum, details will be updated) 
  
 --- 
 
@@ -22,9 +22,11 @@ directories as a pdf file
 --- 
 
 
-![TSP algo demo on pr76](https://github.com/kk-1/tsp/blob/main/bconcaveTSP-d240.gif?raw=true)
+![TSP algo demo on pr76 dataset from TSPLIB](https://github.com/kk-1/tsp/blob/main/concaveTSP-d240.gif?raw=true)
   
 --- 
+
 For any suggestion or questions:
 kemal.kemal@unicam.it
+
 --- 
