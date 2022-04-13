@@ -1,4 +1,28 @@
-## TSP datasets and results for our TSP paper (in press with the SN Operations Research Forum, details will be updated) 
+## TSP datasets and results for our TSP paper:
+K. I. Kilic and L. Mostarda. Novel Concave Hull-Based Heuristic Algorithm For TSP. 
+Operations Research Forum, 3(2):25, 2022. 
+DOI: https://doi.org/10.1007/s43069-022-00137-9 
+
+Bibtex:  
+--------------------------------------------------------------------------------  
+```latex
+@Article{IhsanKilic2022,
+author="Ihsan Kilic, Kemal
+and Mostarda, Leonardo",
+title="Novel Concave Hull-Based Heuristic Algorithm For TSP",
+journal="Operations Research Forum",
+year="2022",
+month="Apr",
+day="13",
+volume="3",
+number="2",
+pages="25",
+issn="2662-2556",
+doi="10.1007/s43069-022-00137-9",
+url="https://doi.org/10.1007/s43069-022-00137-9"
+}
+``` 
+-------------------------------------------------------------------------------- 
  
 --- 
 
